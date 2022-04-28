@@ -7,12 +7,10 @@ import Footer from "../../components/footer/Footer";
 function Home() {
     return (
         <>
-            <Header />
             <main id="main">
                 <Post />
                 <Side />
             </main>
-            <Footer />
         </>
     );
 }
