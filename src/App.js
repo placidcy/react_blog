@@ -6,7 +6,7 @@ import Join from "./pages/join/Join";
 import Write from "./pages/write/Write";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
-//import View from "./pages/view/View";
+import View from "./pages/view/View";
 import "./App.css";
 
 function App() {
@@ -14,13 +14,25 @@ function App() {
         <Router>
             <Header />
             <Switch>
-                <Route exact path="/" component={Home}></Route>
+                <Route exact path="/">
+                    <Home />
+                </Route>
 
-                <Route path="/join" component={Join}></Route>
+                <Route path="/join">
+                    <Join />
+                </Route>
 
-                <Route path="/login" component={Login}></Route>
+                <Route path="/login">
+                    <Login />
+                </Route>
 
-                <Route path="/write" component={Write}></Route>
+                <Route path="/write">
+                    <Write />
+                </Route>
+
+                <Route path="/View">
+                    <View />
+                </Route>
             </Switch>
             <Footer />
         </Router>

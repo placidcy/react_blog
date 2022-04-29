@@ -1,6 +1,6 @@
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import "./view.scss";
+//import "./view.scss";
 
 function View() {
     return (
