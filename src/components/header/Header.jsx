@@ -22,7 +22,7 @@ export default function Header() {
                             <a href="/login">LOGIN</a>
                         </li>
                         <li>
-                            <a href="/join/">JOIN</a>
+                            <a href="/join">JOIN</a>
                         </li>
                         <li>
                             <a href="/post">POST</a>

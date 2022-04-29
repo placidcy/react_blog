@@ -7,7 +7,7 @@ function Login() {
             <section class="join-type gray">
                 <div class="login-form">
                     <h3>로그인</h3>
-                    <form action="" name="login" method="post">
+                    <form action="Login.jsx" name="login" method="post">
                         <fieldset>
                             <legend class="ir_so">로그인 입력폼</legend>
                             <div class="join-box">

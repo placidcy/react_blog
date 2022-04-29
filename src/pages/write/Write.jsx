@@ -9,7 +9,7 @@ function Write() {
                         <p class="section__desc">IT와 관련된 글을 작성해주세요.</p>
                         <div class="blog__inner">
                             <div class="blog__write">
-                                <form action="#" name="blogWrite" method="post" enctype="multipart/form-data">
+                                <form action="Write.jsx" name="blogWrite" method="post" enctype="multipart/form-data">
                                     <fieldset>
                                         <legend class="ir_so">블로그 게시글 작성 영역</legend>
                                         <div>
