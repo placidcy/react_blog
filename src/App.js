@@ -30,7 +30,7 @@ function App() {
                     <Write />
                 </Route>
 
-                <Route path="/view">{/* <View /> */}</Route>
+                <Route path="./view">{/* <View /> */}</Route>
             </Switch>
             <Footer />
         </Router>
