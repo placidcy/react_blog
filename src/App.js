@@ -18,15 +18,15 @@ function App() {
                     <Home />
                 </Route>
 
-                <Route path="/join">
+                <Route path="./pages/join/Join.jsx">
                     <Join />
                 </Route>
 
-                <Route path="/login">
+                <Route path="./pages/login/Login.jsx">
                     <Login />
                 </Route>
 
-                <Route path="/write">
+                <Route path="./pages/write/Write.jsx">
                     <Write />
                 </Route>
 
