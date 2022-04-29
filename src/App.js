@@ -14,23 +14,13 @@ function App() {
         <Router>
             <Header />
             <Switch>
-                <Route path="/">
-                    <Home />
-                </Route>
+                <Route exact path="/" component={Home}></Route>
 
-                <Route path="./pages/join/Join.jsx">
-                    <Join />
-                </Route>
+                <Route path="/join" component={Join}></Route>
 
-                <Route path="./pages/login/Login.jsx">
-                    <Login />
-                </Route>
+                <Route path="/login" component={Login}></Route>
 
-                <Route path="./pages/write/Write.jsx">
-                    <Write />
-                </Route>
-
-                <Route path="./view">{/* <View /> */}</Route>
+                <Route path="/write" component={Write}></Route>
             </Switch>
             <Footer />
         </Router>
