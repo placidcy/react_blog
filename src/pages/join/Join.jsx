@@ -30,7 +30,7 @@ function Join() {
                             <label for="joinCheck">약관에 동의합니다.</label>
                         </span>
                     </div>
-                    <form action="" name="join" method="post" onsubmit="return joinChecks()">
+                    <form action="join.jsx" name="join" method="post" onsubmit="return joinChecks()">
                         <fieldset>
                             <legend class="ir_so">회원가입 입력폼</legend>
                             <div class="join-box">
