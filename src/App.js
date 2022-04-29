@@ -5,21 +5,22 @@ import Login from "./pages/login/Login";
 import Write from "./pages/write/Write";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
+import "./App.css";
 
 function App() {
     return (
         <Router>
             <Header />
             <Switch>
-                <Route path="">
+                <Route path="/">
                     <Home />
                 </Route>
 
-                <Route path="./pages/login/Login">
+                <Route path="/login">
                     <Login />
                 </Route>
 
-                <Route path="./pages/write/Write">
+                <Route path="/write">
                     <Write />
                 </Route>
             </Switch>

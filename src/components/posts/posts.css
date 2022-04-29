@@ -1,0 +1,11 @@
+#main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.blog__posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
