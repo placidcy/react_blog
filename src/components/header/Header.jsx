@@ -19,16 +19,16 @@ export default function Header() {
                             <a href="/">HOME</a>
                         </li>
                         <li>
-                            <a href="/login">LOGIN</a>
+                            <a href="./pages/login/Login.jsx">LOGIN</a>
                         </li>
                         <li>
-                            <a href="/join">JOIN</a>
+                            <a href="./pages/join/Join.jsx">JOIN</a>
                         </li>
                         <li>
-                            <a href="/view">POST</a>
+                            <a href="./components/post/Post.jsx">POST</a>
                         </li>
                         <li>
-                            <a href="/write">WRITE</a>
+                            <a href="./pages/write/Write.jsx">WRITE</a>
                         </li>
                     </ul>
                 </nav>
