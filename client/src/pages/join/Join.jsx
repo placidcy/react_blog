@@ -1,3 +1,5 @@
+import "./join.css";
+
 function Join() {
     return (
         <>
