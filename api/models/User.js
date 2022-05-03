@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-// php의 회원에 대한 데이터(테이블) 만드는 기능
+// php의 회원에 대한 데이터(테이블) 만드는 기능과 같음
 const UserSchema = new mongoose.Schema(
   {
     username: {

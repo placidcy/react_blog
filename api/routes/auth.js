@@ -1,10 +1,8 @@
 const router = require("express").Router();
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
-const { restart } = require("nodemon");
 
 // 회원가입
-
 router.post("/register", async (req, res) => {
   try {
     const salt = await bcrypt.genSalt(10);
@@ -32,7 +30,7 @@ router.post("/login", async (req, res) => {
     const validated = await bcrypt.compare(req.body.password, user.password);
     !validated && res.status(400).json("회원이 존재(비밀번호)하지 않음");
 
-    const { password, ...others } = user._doc;
+    const {password, ...others} = user._doc;
 
     res.status(200).json(others);
   } catch (error) {
