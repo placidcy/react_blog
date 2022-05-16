@@ -1,6 +1,6 @@
-const router = require("express").Router();
+const router = require("express").Router(); // 주소 설정
 const User = require("../models/User");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcrypt"); // 비밀번호 암호화 설정
 
 // 회원가입
 router.post("/register", async (req, res) => {
@@ -30,6 +30,7 @@ router.post("/login", async (req, res) => {
     const validated = await bcrypt.compare(req.body.password, user.password);
     !validated && res.status(400).json("회원이 존재(비밀번호)하지 않음");
 
+    // 비밀번호 제외한 나머지 값만 저장(?)
     const {password, ...others} = user._doc;
 
     res.status(200).json(others);

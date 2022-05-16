@@ -24,7 +24,7 @@ const PostSchema = new mongoose.Schema(
       required: true,
     },
 
-    category: {
+    categories: {
       type: Array,
       required: false,
     },

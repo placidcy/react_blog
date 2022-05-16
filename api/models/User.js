@@ -4,9 +4,9 @@ const mongoose = require("mongoose");
 const UserSchema = new mongoose.Schema(
   {
     username: {
-      type: String,
-      required: true,
-      unique: true,
+      type: String, 
+      required: true, // 입력 필요 설정
+      unique: true, // 중복 가능 설정
     },
 
     email: {

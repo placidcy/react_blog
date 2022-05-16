@@ -1,12 +1,12 @@
 const router = require("express").Router();
 const User = require("../models/User");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcrypt"); 
 
 // 회원 정보 수정(php의 get)
 router.put("/:id", async (req, res) => {
     if (req.body.userId === req.params.id) {
         if (req.body.password) {
-            const salt = await bcrypt.genSalt(10); // 비밀번호 암호화
+            const salt = await bcrypt.genSalt(10); // 비밀번호 암호화 함수(10개의 암호로 만들어짐)
             req.body.password = await bcrypt.hash(req.body.password, salt);
         }
         try {
@@ -20,11 +20,12 @@ router.put("/:id", async (req, res) => {
     }
 });
 
-// 회원 정보 삭제
+// 회원 정보 삭제하기
 router.delete("/:id", async (req, res) => {
+    // 자신의 아이디와 등록된 아이디가 같을때 찾아서 삭제
     if(req.body.userId === req.params.id) {
         try {
-            const user = await User.findById(req.params.id);
+            //const user = await User.findById(req.params.id);
             try {
                 // 회원 정보 데이터 삭제
                 //await Post.post.deleteMany({username: user.username});
@@ -47,7 +48,7 @@ router.get("/:id", async(req, res) => {
         const user = await User.findById(req.params.id);
 
         //...others : 회원의 세부 정보를 가져오는 변수
-        const {password, ...others} = user._doc;
+        const {password, ...others} = user._doc; // 비밀번호를 제외한 나머지 정보들을 가져옴
         res.status(200).json(others);
     } catch(error) {
         res.status(500).json(error);
